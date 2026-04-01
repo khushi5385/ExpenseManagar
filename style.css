@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+/* top nav */
+.nav {
+    margin: 20px;
+    background-color: #b91c1c;
+    min-height: 180px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    color: #111827;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* form + list box */
+.expense-box {
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.expenseform {
+    flex: 1;
+}
+
+.expense-list {
+    flex: 1;
+    border-left: 2px solid #eee;
+    padding-left: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.expenseform input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* main add expense button */
+button {
+    padding: 12px;
+    border: none;
+    background: #10b981;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* expense list items */
+#expenses {
+    list-style: none;
+    padding: 0;
+}
+#searchExpense {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+#expenses li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* delete edit button wrapper */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* delete button */
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* edit button */
+.edit-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+    opacity: 0.8;
+}
+
+/* footer */
+.footer {
+     margin: 20px;
+    background-color: #b91c1c;
+    min-height: 160px;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+   
+   
+        
+}
