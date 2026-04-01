@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Manager</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+<div class="main-container">
+    <div class="container">
+    <div class="nav">
+        <div id="incomeCircle" class="circle">₹0</div>
+        <div id="expenseCircle" class="circle">₹0</div>
+        <div id="restCircle" class="circle">₹0</div>
+    </div>
+
+        <div class="expense-box">
+            <form id="expenseform" class="expenseform">
+                <h1>ADD EXPENSE</h1>
+
+                <div class="input-group">
+                    <label>Total Income</label>
+                    <input type="number" id="total-income">
+                </div>
+
+                <div class="input-group">
+                    <label>Expense title</label>
+                    <input type="text" id="title">
+                </div>
+
+                <div class="input-group">
+                    <label>Amount</label>
+                    <input type="text" id="amount">
+                </div>
+
+                
+
+              
+
+                <button type="submit">Add Expense</button>
+            </form>
+
+        <div class="expense-list">
+            <h2>Expense List</h2>
+            <input type="text" id="searchExpense" placeholder="Search expense...">
+            <ul id="expenses"></ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer"><p style="display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 50px;"> 💎 Small savings today build big dreams tomorrow.</p></div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
